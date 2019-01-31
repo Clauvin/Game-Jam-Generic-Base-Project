@@ -142,7 +142,7 @@ namespace SupportV4Jam
         static float initial_position = 0.0f;
         static float actual_position = 0.0f;
 
-        static float rotation_multiplier = 0.2f;
+        static float rotation_multiplier = 1f;
 
         static float sky_rotation;
 
@@ -154,6 +154,11 @@ namespace SupportV4Jam
         public static void UpdateActualPosition(float actual)
         {
             actual_position = actual;
+        }
+
+        public static void UpdateRotationModifier(float rotation)
+        {
+            rotation_multiplier = rotation;
         }
 
         public static void UpdateSkyRotation()
