@@ -137,4 +137,37 @@ namespace SupportV4Jam
         }
     }
 
+    public static class SpinTheSkybox
+    {
+        static float initial_position = 0.0f;
+        static float actual_position = 0.0f;
+
+        static float rotation_multiplier = 0.2f;
+
+        static float sky_rotation;
+
+        public static void UpdateInitialPosition(float initial)
+        {
+            initial_position = initial;
+        }
+
+        public static void UpdateActualPosition(float actual)
+        {
+            actual_position = actual;
+        }
+
+        public static void UpdateSkyRotation()
+        {
+            sky_rotation = (actual_position - initial_position) * rotation_multiplier;
+
+            RenderSettings.skybox.SetFloat("_Rotation", sky_rotation);
+        }
+
+        public static void UpdateSkyRotation(float actual)
+        {
+            UpdateActualPosition(actual);
+            UpdateSkyRotation();
+        }
+    }
+
 }
