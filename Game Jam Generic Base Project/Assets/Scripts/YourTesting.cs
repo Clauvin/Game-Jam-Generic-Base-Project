@@ -5,7 +5,7 @@ using SupportV4Jam;
 
 public class YourTesting : MonoBehaviour {
 
-    public float value;
+    public int value = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +19,6 @@ public class YourTesting : MonoBehaviour {
 
     public void DoStuff()
     {
-        //Place here which function you want to test.
+
     }
 }
