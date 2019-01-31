@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SupportV4Jam;
 
-public class RandomTesting : MonoBehaviour {
+public class YourTesting : MonoBehaviour {
 
     public float value;
 
