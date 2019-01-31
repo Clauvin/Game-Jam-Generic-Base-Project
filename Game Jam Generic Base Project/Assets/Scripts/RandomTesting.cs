@@ -19,7 +19,6 @@ public class RandomTesting : MonoBehaviour {
 
     public void DoStuff()
     {
-        value += Time.deltaTime;
-        SpinTheSkybox.UpdateSkyRotation(value);
+        //Place here which function you want to test.
     }
 }
