@@ -505,6 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2086860199}
   - component: {fileID: 2086860201}
+  - component: {fileID: 2086860202}
   - component: {fileID: 2086860200}
   m_Layer: 5
   m_Name: Text
@@ -528,7 +529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -800}
+  m_AnchoredPosition: {x: 0, y: -650}
   m_SizeDelta: {x: 160, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086860200
@@ -602,6 +603,19 @@ MonoBehaviour:
     Function 3
 
 
+    Copyrights
+
+    Copyright 1
+
+    Copyright 2
+
+    Copyright 3
+
+    Copyright 4
+
+    Copyright 5
+
+
     Thanks for playing! :D'
 --- !u!222 &2086860201
 CanvasRenderer:
@@ -610,3 +624,16 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2086860198}
   m_CullTransparentMesh: 0
+--- !u!114 &2086860202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086860198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5d60d5a2d86eb49ba1ba8747ad9d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y_velocity_per_frame: 1
+  position_to_trigger_main_menu_loading: 250
