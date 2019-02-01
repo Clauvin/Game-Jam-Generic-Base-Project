@@ -636,4 +636,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y_velocity_per_frame: 1
-  position_to_trigger_main_menu_loading: 250
+  position_to_trigger_main_menu_loading: 270
