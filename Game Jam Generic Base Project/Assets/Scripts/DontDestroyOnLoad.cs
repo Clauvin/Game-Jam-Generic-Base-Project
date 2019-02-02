@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroyOnLoad : MonoBehaviour {
 
@@ -8,24 +9,24 @@ public class DontDestroyOnLoad : MonoBehaviour {
     public bool have_jumped = false;
 
     void Awake()
-    {
-        SceneManager.activeSceneManager += OnSceneChanged;
-        
+    {        
         if (!have_jumped)
         {
-            Gameobject[] this_objects = GameObject.FindGameObjectsWithTag(tag_name);
+            GameObject[] this_objects = GameObject.FindGameObjectsWithTag(tag_name);
 
-            if (objs.Length > 1)
+            if (this_objects.Length > 1)
             {
-                Destroy(this.gameobject);
+                Destroy(this.gameObject);
             }
 
        }
 
         DontDestroyOnLoad(this);
+
+        SceneManager.activeSceneChanged += OnSceneChanged;
     }
 
-    void OnSceneChanged()
+    void OnSceneChanged(Scene previous, Scene actual)
     {
         this.have_jumped = true;
     }
